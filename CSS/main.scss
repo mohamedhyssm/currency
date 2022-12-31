@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:focus {
+  outline: none;
+  border: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+
+.container-fluid {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    font-size: 3em;
+    margin-bottom: 30px;
+  }
+
+  .form {
+    // flex
+    display: flex;
+    justify-content: center;
+    // border and width
+    width: 250px;
+    border: 1px solid #777;
+    padding: 10px;
+
+    input,
+    select {
+      border: none;
+    }
+
+    select {
+      width: 75px;
+    }
+
+    input {
+      flex: 1;
+    }
+  }
+
+  button {
+    margin-top: 20px;
+    width: 70px;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+}
