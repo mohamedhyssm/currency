@@ -21,9 +21,4 @@ async function getCurrency() {
     let dollar = firstFormInput.value / currency.rates[firstFormSelect.value]
     secondFormInput.value = (dollar * currency.rates[secondFormSelect.value]).toFixed(3)
   }
-
-  console.log(currency)
 }
-
-console.log(Array.from(firstFormSelect.children).length)
-console.log(Array.from(secondFormSelect.children).length)
